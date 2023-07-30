@@ -1,1 +1,17 @@
-[]
+- id: '1690684028393'
+  alias: Bedroom Light Switch
+  description: ''
+  trigger:
+  - platform: device
+    domain: mqtt
+    device_id: 707bc1b71716a680c3e56171ed50d0b3
+    type: action
+    subtype: single
+    discovery_id: 0x00158d000874b694 action_single
+  condition: []
+  action:
+  - type: toggle
+    device_id: eba4c4c7ae3624a420e3554bd686aec0
+    entity_id: 8bcc4485787f237877cfcbd5efaed217
+    domain: switch
+  mode: single

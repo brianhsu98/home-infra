@@ -1,1 +1,11 @@
-{}
+{
+    "0x00124b0022eafdce": {
+        "state": "OFF"
+    },
+    "0x00158d000874b694": {
+        "voltage": 3065,
+        "battery": 100,
+        "device_temperature": 29,
+        "power_outage_count": 5
+    }
+}
