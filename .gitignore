@@ -1,4 +1,5 @@
 untracked/*
 configs/homeassistant/*
 configs/zigbee2mqtt/*
+configs/qbittorrent/*
 configs/jellyfin/*
