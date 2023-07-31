@@ -7,7 +7,7 @@ services:
     volumes:
       - /home/brian/home-infra/configs/jellyfin:/config 
       - /home/brian/home-infra/untracked/jellyfin_cache:/cache 
-      - /home/brian/media:/media
+      - /mnt/media:/media
     ports:
       - target: 8096
         published: 8096
