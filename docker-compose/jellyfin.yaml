@@ -1,0 +1,15 @@
+version: '3'
+services:
+  jellyfin:
+    image: jellyfin/jellyfin
+    container_name: jellyfin
+    network_mode: host
+    volumes:
+      - /home/brian/home-infra/configs/jellyfin:/config 
+      - /home/brian/home-infra/untracked/jellyfin_cache:/cache 
+      - /home/brian/media:/media
+    ports:
+      - target: 8096
+        published: 8096
+        protocol: tcp
+    restart: unless-stopped

@@ -5,7 +5,10 @@
     "0x00158d000874b694": {
         "voltage": 3065,
         "battery": 100,
-        "device_temperature": 29,
+        "device_temperature": 28,
         "power_outage_count": 5
+    },
+    "0x00124b0022e920e0": {
+        "state": "OFF"
     }
 }
