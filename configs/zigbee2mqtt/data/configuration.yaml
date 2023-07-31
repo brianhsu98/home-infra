@@ -1,0 +1,15 @@
+homeassistant: true
+permit_join: true
+mqtt:
+  base_topic: zigbee2mqtt
+  server: mqtt://localhost
+serial:
+  port: /dev/ttyACM0
+frontend: true
+devices:
+  '0x00158d000874b694':
+    friendly_name: '0x00158d000874b694'
+  '0x00124b0022eafdce':
+    friendly_name: '0x00124b0022eafdce'
+  '0x00124b0022e920e0':
+    friendly_name: '0x00124b0022e920e0'
