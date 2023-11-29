@@ -4,6 +4,8 @@ services:
     image: jellyfin/jellyfin
     container_name: jellyfin
     network_mode: host
+    group_add:
+      - "110"
     volumes:
       - /home/brian/home-infra/configs/jellyfin:/config 
       - /home/brian/home-infra/untracked/jellyfin_cache:/cache 
@@ -12,4 +14,6 @@ services:
       - target: 8096
         published: 8096
         protocol: tcp
+    devices:
+      - /dev/dri/renderD128:/dev/dri/renderD128
     restart: unless-stopped
